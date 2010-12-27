@@ -4,8 +4,12 @@ from setuptools import setup
 
 setup(
     name='TracEmailSystem',
-    version='0.12.0.1',
-    packages=['tracext', 'tracext.emailsystem'],
+    version='0.12.0.1.1',
+    packages=['tracext', 
+              'tracext.emailsystem',
+              'tracext.emailsystem.provider',
+              'tracext.emailsystem.processor',
+              ],
     namespace_packages=['tracext'],
     entry_points = {'trac.plugins': [
         'emailsystem.api = tracext.emailsystem.api',
